@@ -18,17 +18,29 @@
   @apply border-white;
 }
 
-/* Media Query */
-@screen md {
-  .address-container {
-    @apply py-0;
-  }
-}
-
 .item-nav-inf {
   @apply border-b-2 border-transparent py-1 px-3;
 }
 
 .item-nav-inf:hover {
   @apply hover:border-orange-600 hover:text-orange-600;
+}
+
+.btn-amazon-prime {
+  @apply text-sm bg-yellow-350 border border-yellow-700 rounded px-3 py-3  h-12  block items-center w-full text-center shadow-md;
+}
+
+.btn-amazon-prime:hover {
+  @apply bg-yellow-400;
+}
+
+/* Media Query */
+@screen md {
+  .address-container {
+    @apply py-0;
+  }
+
+  .btn-amazon-prime {
+    @apply text-xs ml-10 h-8 flex w-auto;
+  }
 }
