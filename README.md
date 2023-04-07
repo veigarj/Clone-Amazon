@@ -1,6 +1,6 @@
 <h1 align="center"> Site Clone Amazon </h1>
 
- Cone do site da Amazon em Html e Tailwind
+ Clone do site da Amazon em Html e Tailwind
 
 <br>
 
@@ -17,7 +17,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Git e Github
 
 
-**O que aprendemos nesse desafio:**
+**O que aprendemos nesse projeto:**
 
 - Configurar Tailwind no projeto
 - Extend fontFamily, colors, spacing
