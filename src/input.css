@@ -1,6 +1,16 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+
+@import 'tailwindcss/components';
+
+@import 'tailwindcss/utilities';
+
+.address-container {
+  @apply flex items-center border border-transparent rounded-sm px-2 py-2;
+}
+
+.address-container:hover {
+  @apply border-white;
+}
 
 .item-nav-mid {
   @apply mr-4 border border-transparent rounded-sm px-2 py-1;
@@ -10,37 +20,33 @@
   @apply border-white;
 }
 
-.address-container {
-  @apply flex items-center border border-transparent  rounded-sm px-2 py-1;
-}
-
-.address-container:hover {
-  @apply border-white;
-}
-
 .item-nav-inf {
-  @apply border-b-2 border-transparent py-1 px-3;
+  @apply border-b-2 border-transparent  py-1 px-3;
 }
 
 .item-nav-inf:hover {
-  @apply hover:border-orange-600 hover:text-orange-600;
+  @apply border-orange-650 text-orange-650;
 }
 
 .btn-amazon-prime {
-  @apply text-sm bg-yellow-350 border border-yellow-700 rounded px-3 py-3  h-12  block items-center w-full text-center shadow-md;
+  @apply text-sm bg-yellow-350 border border-yellow-700 rounded px-3 py-3 h-12 block items-center w-full text-center;
 }
 
-.btn-amazon-prime:hover {
-  @apply bg-yellow-400;
+.item-footer-inf {
+  @apply hidden text-gray-600 mb-10;
 }
 
-/* Media Query */
+/* MEDIA QUERY */
 @screen md {
   .address-container {
     @apply py-0;
   }
 
   .btn-amazon-prime {
-    @apply text-xs ml-10 h-8 flex w-auto;
+    @apply text-xs py-0 ml-10 h-8 flex w-auto;
+  }
+
+  .item-footer-inf {
+    @apply block;
   }
 }
